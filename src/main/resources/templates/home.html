@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 
 <head>
 
@@ -710,7 +710,17 @@
   <!-- Page level custom scripts -->
   <script src="/static/js/demo/chart-area-demo.js"></script>
   <script src="/static/js/demo/chart-pie-demo.js"></script>
+  <script th:inline="javascript">
+    var user = [[${user}]];
+    var email = user.email;
+    var name = user.name;
 
+    $(document).ready(function(){
+      console.log(user);
+      console.log(email);
+      console.log(name);
+    })
+  </script>
 </body>
 
 </html>
