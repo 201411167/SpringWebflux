@@ -1,4 +1,4 @@
-package smu.capstone.heartsignal.service.beatService;
+package smu.capstone.heartsignal.service.userService;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
